@@ -2,9 +2,9 @@ import './App.css';
 
 function App() {
 
-  let name = 'Devin';
+  let myName = 'Devin';
 
-  let tasks = [
+  let toDoList = [
     {
       id: 1,
       title: 'Homework',
@@ -23,13 +23,13 @@ function App() {
   ];
 
   let generateTask = () => {
-    let num = Math.floor(Math.random() * (tasks.length - 0) + 0);
-    return tasks[num].title;
+    let num = Math.floor(Math.random() * (toDoList.length));
+    return toDoList[num].title;
   }
 
   return (
     <div className="app">
-      My name is <h3>{name}</h3> and the selected task to do is <h3>{generateTask()}</h3>
+      My name is <h3>{myName}</h3> and the selected task to do is <h3>{generateTask()}</h3>
     </div>
   );
 }
