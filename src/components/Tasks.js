@@ -10,7 +10,7 @@ let Tasks = (props) => {
     } else {
         return (
             <div className="app">
-              Hello Devin, <br /><br />
+              Hello Devin! <br /><br />
               The tasks are 
               {props.taskList.map((task) => (
                   <Task key={task.id || task.title} title={task.title} description={task.description} />
